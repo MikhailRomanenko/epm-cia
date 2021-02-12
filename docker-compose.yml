@@ -1,0 +1,6 @@
+version: "3.9"
+services:
+  web:
+    image: mromanenko/epm-cia-hc:v1.0
+    ports:
+      - "8080:8080"
