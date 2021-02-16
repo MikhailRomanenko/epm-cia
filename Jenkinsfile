@@ -4,7 +4,7 @@ pipeline {
         maven 'apache-maven-3.0.1'
     }
     stages {
-        stage('Example') {
+        stage('Example-2') {
             steps {
                 sh 'mvn --version'
             }
