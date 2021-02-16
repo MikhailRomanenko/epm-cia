@@ -1,11 +1,11 @@
 pipeline {
     agent {
-        docker 'gradle:jre8'
+        docker 'openjdk:8'
     }
     stages {
         stage('Test') {
             steps {
-                sh 'gradle --version'
+                sh 'java -version'
             }
         }
     }
