@@ -1,12 +1,11 @@
 pipeline {
-    agent any
-    tools {
-        maven 'apache-maven-3.0.1'
+    agent {
+        docker 'gradle:jre8'
     }
     stages {
-        stage('Example-4') {
+        stage('Test') {
             steps {
-                sh 'mvn --version'
+                sh 'gradle --version'
             }
         }
     }
