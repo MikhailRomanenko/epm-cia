@@ -1,14 +1,9 @@
 pipeline {
-    agent {
-        docker { image 'openjdk:8' }
-    }
-    tools {
-        dockerTool 'docker'
-    }
+    agent any
     stages {
-        stage('Test1') {
+        stage('Test') {
             steps {
-                sh 'java -version'
+                sh 'docker -version'
             }
         }
     }
