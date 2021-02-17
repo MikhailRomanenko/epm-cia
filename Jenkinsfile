@@ -3,7 +3,7 @@ pipeline {
         docker { image 'openjdk:8' }
     }
     tools {
-        docker 'docker'
+        dockerTool 'docker'
     }
     stages {
         stage('Test1') {
